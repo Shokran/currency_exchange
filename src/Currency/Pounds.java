@@ -1,16 +1,16 @@
 package Currency;
 
-public class Euros implements Currency {
+public class Pounds implements Currency {
 
     public String currencyName() {
-        return "euro";
+        return "pounds";
     }
 
     public String currencyAbbreviation() {
-        return "EUR";
+        return "GBP";
     }
 
     public String currencySign() {
-        return "\u20AC";
+        return "\u00A3";
     }
 }
