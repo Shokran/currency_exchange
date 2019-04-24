@@ -15,13 +15,13 @@ public class Exchange {
             System.out.println("Введите сумму:");
             amountConvertFrom = scanner.nextBigDecimal(); // вводим сумму которую хотим обменять
             System.out.println("Введите валюту для обмена:");
-            currencyConvertTo = scanner.next(); // вводим
+            currencyConvertTo = scanner.next(); // вводим валюту которую хотим получить
             System.out.println("Немного терпения...");
-            Thread.sleep(2000);
+            Thread.sleep(2000); // ожидание (для вида)
             System.out.println("Вы действительно хотите купить 1.50 $ за " + amountConvertFrom + " \u20BD ?");
             System.out.println("Введите \"y\" если согласны, \"n\" для отмены.");
             confirmConvert = scanner.next(); // ввод подтверждения
-            System.out.println("Вы совершили обмен: Купили 1.50 $ за " + amountConvertFrom + " \u20BD.");
+            System.out.println("Вы совершили обмен: Купили 1.50 \u0024 за " + amountConvertFrom + " \u20BD.");
             System.out.println("Хотите обменять еще?");
             System.out.println("Введите \"y\" если согласны, \"n\" для отмены.");
             confirmRepeat = scanner.next();
@@ -39,6 +39,6 @@ public class Exchange {
     }
 }
 
-//System.out.println("€\n" +
-//        "¥\n" +
-//        "$");
+//System.out.println("€\n" + 20AC
+//        "¥\n" + 00A5
+//        "$"); 0024
