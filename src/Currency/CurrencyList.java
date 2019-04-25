@@ -1,6 +1,6 @@
 package Currency;
 
-public enum Сurrency {
+public enum CurrencyList {
 
     RUB,
     USD,

@@ -1,6 +1,8 @@
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Scanner;
 
+import Currency.CurrencyList;
 import Support.Perform;
 
 public class Exchange {
@@ -17,6 +19,8 @@ public class Exchange {
                 currencyConvertFrom = scanner.next(); // вводим валюту которую хотим обменять
                 currencyConvertFrom = new Perform().performInputCurrency(currencyConvertFrom);
                 System.out.println(currencyConvertFrom);
+//                boolean contains = Arrays.stream(CurrencyList.values()).anyMatch(currencyConvertFrom::equals);
+                boolean contains = Arrays.asList(CurrencyList.values()).contains(currencyConvertFrom);
 
                 System.out.println("Введите сумму:");
                 amountConvertFrom = scanner.nextBigDecimal(); // вводим сумму которую хотим обменять
