@@ -1,28 +1,41 @@
 package Currency;
 
+import java.util.Optional;
+
+/**
+ * @author kozlov_ya
+ * @created 24.05.19
+ */
+
+/*
+ Класс представляющий из себя вспомогательный
+ Основан на одноименном паттерне проектирования
+ фабрика (по-русски так се звучит) в оригинале factory
+ */
+
 public class CurrencyFactory {
 
-    public Currency getCurrency (CurrencyList type) {
+    public static Optional<Currency> getCurrency (String type) {
+
+        type = type.toUpperCase(); // дополнительная придаём данным нужный регистр
         Currency toReturn = null;
         switch (type) {
-            case RUB:
+            case "RUB":
                 toReturn = new Rubles();
                 break;
-            case USD:
+            case "USD":
                 toReturn = new Dollars();
                 break;
-            case EUR:
+            case "EUR":
                 toReturn = new Euros();
                 break;
-            case GBP:
+            case "GBP":
                 toReturn = new Pounds();
                 break;
-            case YEN:
+            case "YEN":
                 toReturn = new Yen();
                 break;
-            default:
-                throw new IllegalArgumentException("Неправильный тип валюты: " + type);
         }
-        return toReturn;
+        return Optional.ofNullable(toReturn);
     }
 }

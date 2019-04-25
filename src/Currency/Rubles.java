@@ -1,5 +1,7 @@
 package Currency;
 
+import java.math.BigDecimal;
+
 public class Rubles implements Currency {
 
     public String currencyName() {
@@ -12,5 +14,9 @@ public class Rubles implements Currency {
 
     public String currencySign() {
         return "\u20BD";
+    }
+
+    public BigDecimal currencyToUsd() {
+        return BigDecimal.valueOf(0.015);
     }
 }

@@ -4,18 +4,32 @@
     <bookmark url="file://$PROJECT_DIR$/src/Currency/Currency.java" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d553e7-9bba-4cb1-bacb-302acb4a055e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Currency/CurrencyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Currency/CurrencyList.java" afterDir="false" />
+    <list default="true" id="7bf1df63-67eb-441f-989a-abacd914e1e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/math/annotations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Control/ControlUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Convert/CurrencuToUsd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Dollars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Dollars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Euros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Euros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Pounds.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Pounds.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Rubles.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Rubles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Yen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Currency/Yen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Exchange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Exchange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Kek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Support/Perform.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/currency_exchange/Support/Perform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Test1$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Test1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Test1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Currency/Сurrency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Support/Perform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/currency_exchange/Support/Validation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/CurrencyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/CurrencyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/CurrencyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Dollars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Dollars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Euros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Euros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Pounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Pounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Rubles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Rubles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Currency/Yen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Currency/Yen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Perform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Support/Validation.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exchange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="239">
+              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,10 +56,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Support/Validation.java">
+        <entry file="file://$PROJECT_DIR$/src/Convert/CurrencuToUsd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+            <state relative-caret-position="255">
+              <caret line="20" column="24" lean-forward="true" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Control/ControlUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,26 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Currency/Currency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Currency/Rubles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -80,35 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Currency/Yen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Currency/Dollars.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Currency/Euros.java">
+        <entry file="file://$PROJECT_DIR$/src/Currency/Rubles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -116,8 +106,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Currency/Pounds.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="15" selection-start-line="15" selection-end-line="40" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Currency/Euros.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,22 +161,28 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Test1.java" />
-        <option value="$PROJECT_DIR$/src/Currency/Dollars.java" />
         <option value="$PROJECT_DIR$/src/Kek.java" />
-        <option value="$PROJECT_DIR$/src/Currency/Euros.java" />
-        <option value="$PROJECT_DIR$/src/Currency/Yen.java" />
-        <option value="$PROJECT_DIR$/src/Currency/Pounds.java" />
         <option value="$PROJECT_DIR$/src/Validation.java" />
         <option value="$PROJECT_DIR$/src/Support/Perform.java" />
         <option value="$PROJECT_DIR$/src/Support/Validation.java" />
         <option value="$PROJECT_DIR$/src/Currency/Сurrency.java" />
         <option value="$PROJECT_DIR$/src/Currency/Сur.java" />
         <option value="$PROJECT_DIR$/src/Currency/Cur.java" />
+        <option value="$PROJECT_DIR$/src/Support/Input.java" />
         <option value="$PROJECT_DIR$/src/Currency/CurrencyList.java" />
-        <option value="$PROJECT_DIR$/src/Currency/Currency.java" />
         <option value="$PROJECT_DIR$/src/Currency/Rubles.java" />
+        <option value="$PROJECT_DIR$/src/Currency/Euros.java" />
+        <option value="$PROJECT_DIR$/src/Currency/Yen.java" />
+        <option value="$PROJECT_DIR$/src/Currency/Pounds.java" />
+        <option value="$PROJECT_DIR$/src/System/System.java" />
+        <option value="$PROJECT_DIR$/src/Support/System.java" />
+        <option value="$PROJECT_DIR$/src/Support/Utils.java" />
+        <option value="$PROJECT_DIR$/src/Currency/Dollars.java" />
+        <option value="$PROJECT_DIR$/src/Currency/Currency.java" />
         <option value="$PROJECT_DIR$/src/Currency/CurrencyFactory.java" />
+        <option value="$PROJECT_DIR$/src/Convert/CurrencuToUsd.java" />
         <option value="$PROJECT_DIR$/src/Exchange.java" />
+        <option value="$PROJECT_DIR$/src/Control/ControlUtils.java" />
       </list>
     </option>
   </component>
@@ -183,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -200,25 +219,24 @@
               <item name="currency_exchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="currency_exchange" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Currency" type="462c0819:PsiDirectoryNode" />
+              <item name="Control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="currency_exchange" type="b2602c69:ProjectViewProjectNode" />
               <item name="currency_exchange" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Support" type="462c0819:PsiDirectoryNode" />
+              <item name="Currency" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uchitel-program" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -261,13 +279,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16201000" />
+    <option name="totallyTimeSpent" value="36077000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17799352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16747573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -275,7 +293,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32819384" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32819384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4251152" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +302,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32034633" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32819384" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,9 +325,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/currency_exchange.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -317,6 +332,9 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/com/sun/xml/internal/ws/developer/MemberSubmissionAddressing.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Character.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/currency_exchange/Test1.class" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.653/currencyConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/Currency/Сur.java" />
     <entry file="file://$PROJECT_DIR$/src/Support/Perform.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -324,24 +342,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/currency_exchange/Test1.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.653/currencyConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3497">
-          <folding>
-            <element signature="e#0#15240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
@@ -350,85 +351,145 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/Сur.java">
+    <entry file="file://$PROJECT_DIR$/src/Support/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Support/Validation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/Currency.java">
+    <entry file="file://$PROJECT_DIR$/currency_exchange.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/math/BigInteger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="195">
+          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4963">
+          <caret line="315" column="19" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#220957#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Currency/Dollars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/Euros.java">
+    <entry file="file://$PROJECT_DIR$/src/Currency/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/Pounds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/Rubles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Currency/Yen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Support/Validation.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Currency/Rubles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Currency/Pounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Currency/Euros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="51">
+          <caret line="15" selection-start-line="15" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Currency/CurrencyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Convert/CurrencuToUsd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="24" lean-forward="true" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exchange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="239">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Control/ControlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

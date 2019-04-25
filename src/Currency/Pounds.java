@@ -1,5 +1,7 @@
 package Currency;
 
+import java.math.BigDecimal;
+
 public class Pounds implements Currency {
 
     public String currencyName() {
@@ -12,5 +14,9 @@ public class Pounds implements Currency {
 
     public String currencySign() {
         return "\u00A3";
+    }
+
+    public BigDecimal currencyToUsd() {
+        return BigDecimal.valueOf(1.29);
     }
 }
