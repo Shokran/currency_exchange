@@ -1,6 +1,4 @@
-package Currency;
-
-import java.math.BigDecimal;
+package currency;
 
 public class Dollars implements Currency {
 
@@ -14,9 +12,5 @@ public class Dollars implements Currency {
 
     public String currencySign() {
         return "\u0024";
-    }
-
-    public BigDecimal currencyToUsd() {
-        return BigDecimal.valueOf(1);
     }
 }

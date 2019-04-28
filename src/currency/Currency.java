@@ -1,6 +1,4 @@
-package Currency;
-
-import java.math.BigDecimal;
+package currency;
 
 /**
  * @author kozlov_ya
@@ -15,5 +13,4 @@ public interface Currency {
     public String currencyName();
     public String currencyAbbreviation();
     public String currencySign();
-    public BigDecimal currencyToUsd();
 }
