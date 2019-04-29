@@ -11,4 +11,8 @@ public enum ConvertRate {
     YEN(BigDecimal.valueOf(0.0090));
 
     public final BigDecimal value;
+
+    ConvertRate(BigDecimal value) {
+        this.value = value;
+    }
 }

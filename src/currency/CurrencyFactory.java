@@ -17,7 +17,7 @@ public class CurrencyFactory {
 
     public static Optional<Currency> getCurrency (String type) {
 
-        type = type.toUpperCase(); // дополнительная придаём данным нужный регистр
+        type = type.toUpperCase(); // придаём данным нужный регистр
         Currency toReturn = null;
         switch (type) {
             case "RUB":
