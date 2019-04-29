@@ -2,17 +2,26 @@ package convert;
 
 import java.math.BigDecimal;
 
+/**
+ * @author kozlov_ya
+ * @created 26.05.19
+ */
+
 public enum ConvertRate {
 
     RUB(BigDecimal.valueOf(0.015)),
     USD(BigDecimal.valueOf(1)),
     EUR(BigDecimal.valueOf(1.11)),
     GBP(BigDecimal.valueOf(1.29)),
-    YEN(BigDecimal.valueOf(0.0090));
+    YEN(BigDecimal.valueOf(0.009));
 
     public final BigDecimal value;
 
     ConvertRate(BigDecimal value) {
         this.value = value;
+    }
+
+    public BigDecimal getValue() {
+        return value;
     }
 }

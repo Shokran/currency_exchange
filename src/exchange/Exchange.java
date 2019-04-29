@@ -1,10 +1,13 @@
 package exchange;
 
+import convert.Convert;
+import convert.ConvertRate;
 import currency.Currency;
 import currency.CurrencyFactory;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -17,32 +20,40 @@ import java.util.Scanner;
  Данный класс освобождает исполняемый от хаоса
  Здесь разбиты по методам все основные шаги
  */
+
 public class Exchange {
 
     private Scanner scanner;
 
     private Currency currencyConvertFrom, currencyConvertTo;
     private BigDecimal currencyAmount;
-    private String confirmConvert, confirmRepeat;
 
     public Exchange() {
+
         scanner = new Scanner(System.in); // создаём сканнер
+
         System.out.println("Добро пожаловать в раздел обмена валют");
-        System.out.println("Для обмена Вам доступны: " + "Список в разработке...");
     }
 
     public void process() throws InterruptedException {
 
+        availableCurrencies();
         currencyFrom();
         currencyAmount();
         currencyTo();
         waitingForUser();
-        approveConvert(currencyConvertFrom, currencyConvertTo, currencyAmount);
-
-        processedConvert(currencyConvertFrom, currencyConvertTo, currencyAmount);
-
+        convert(currencyConvertFrom, currencyConvertTo, currencyAmount);
+        approveConvert();
+        approveRepeat();
 
         System.out.println("Спасибо за посещение нашего банкомата");
+    }
+
+    private void availableCurrencies() {
+        System.out.println("Для обмена Вам доступны: ");
+        System.out.println(Arrays.toString(ConvertRate.values())
+                .replace("[", "")
+                .replace("]", ""));
     }
 
     private void currencyFrom() {
@@ -57,9 +68,19 @@ public class Exchange {
     }
 
     private void currencyAmount() {
+        // Здесь создаем сканер
+        // так как без него обработка ошибки уходит в бесконечный цикл
+        // что вызывает ошибку и некорректную работу программы
+        Scanner scanner = new Scanner(System.in);
         // вводим сумму, которую хотим обменять
         System.out.println("Введите сумму:");
-        currencyAmount = scanner.nextBigDecimal(); // вводим сумму которую хотим обменять
+        // проверяем вводимый формат
+        if (scanner.hasNextBigDecimal()) {
+            currencyAmount = scanner.nextBigDecimal();
+        } else {
+            System.out.println("Не верно введена сумма, пожалуйста, повторите ввод");
+            currencyAmount();
+        }
     }
 
     private void currencyTo() {
@@ -79,44 +100,50 @@ public class Exchange {
         Thread.sleep(2000); // ожидание (для вида)
     }
 
-    private void approveConvert(@NotNull Currency currencyFrom,
-                                @NotNull Currency currencyTo,
-                                BigDecimal currencyAmount) throws InterruptedException {
-        String confirmConvert;
+    private void convert(@NotNull Currency currencyFrom,
+                         @NotNull Currency currencyTo,
+                         BigDecimal currencyAmount) throws InterruptedException {
 
-        System.out.println("Вы действительно хотите купить 1.50"
-                + currencyFrom.currencySign()
-                + " за "
-                + currencyAmount
-                + currencyTo.currencySign()
-                + " ?");
-        do {
-            System.out.println("Введите \"y\" если согласны, \"n\" для отмены.");
-            confirmConvert = scanner.next().toLowerCase(); // ввод подтверждения
-            if (!confirmConvert.equals("y") && !confirmConvert.equals("n")) {
-                System.out.println("Неверный ввод, повторите попытку");
-            }
-        } while (!confirmConvert.equals("y") && !confirmConvert.equals("n"));
+        System.out.println("Вы действительно хотите купить "
+                        + new Convert(currencyConvertFrom,
+                        currencyConvertTo,
+                        currencyAmount).getSumCurrencyConvert()
+                        + currencyTo.currencySign()
+                        + " за "
+                        + currencyAmount
+                        + currencyFrom.currencySign()
+                        + " ?");
+    }
 
-        if (confirmConvert.equals("n")) {
-            process();
+    private void approveConvert() {
+
+        ExchangeValidation validationConvert = new ExchangeValidation();
+        validationConvert.yesOrNO();
+        if (validationConvert.getConfirmRepeat().equals("y")) {
+            processedConvert(currencyConvertFrom, currencyConvertTo, currencyAmount);
         }
     }
 
     private void processedConvert(@NotNull Currency currencyFrom,
                                   @NotNull Currency currencyTo,
-                                  BigDecimal currencyAmount) throws InterruptedException {
-        String confirmRepeat;
+                                  BigDecimal currencyAmount) {
 
-        System.out.println("Вы совершили обмен: Купили 1.50"
-                + currencyFrom.currencySign()
+        System.out.println("Вы совершили обмен: Купили "
+                + new Convert(currencyConvertFrom,
+                currencyConvertTo,
+                currencyAmount).getSumCurrencyConvert()
+                + currencyTo.currencySign()
                 + " за "
                 + currencyAmount
-                + currencyTo.currencySign());
+                + currencyFrom.currencySign());
+    }
+
+    private void approveRepeat() throws InterruptedException {
+
         System.out.println("Хотите обменять еще?");
-        System.out.println("Введите \"y\" если согласны, \"n\" для отмены.");
-        confirmRepeat = scanner.next().toLowerCase(); // ввод подтверждения
-        if (confirmRepeat.equals("y")) {
+        ExchangeValidation validationRepeat = new ExchangeValidation();
+        validationRepeat.yesOrNO();
+        if (validationRepeat.getConfirmRepeat().equals("y")) {
             process();
         }
     }
