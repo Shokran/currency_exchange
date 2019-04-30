@@ -1,8 +1,10 @@
 package convert;
 
 import currency.Currency;
+import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 /**
  * @author kozlov_ya
@@ -13,9 +15,9 @@ public class Convert {
 
     private BigDecimal sumCurrencyConvert;
 
-    public Convert(Currency currencyConvertFrom,
-                   Currency currencyConvertTo,
-                   BigDecimal currencyAmount) {
+    public Convert(@NotNull Currency currencyConvertFrom,
+                   @NotNull Currency currencyConvertTo,
+                   @NotNull BigDecimal currencyAmount) {
 
         BigDecimal rateConvertFrom;
         BigDecimal rateConvertTo;
@@ -27,7 +29,7 @@ public class Convert {
         BigDecimal sumCurrencyConvert;
 
         currencyAmountToUsd = currencyAmount.multiply(rateConvertFrom);
-        sumCurrencyConvert = currencyAmountToUsd.divide(rateConvertTo, 2);
+        sumCurrencyConvert = currencyAmountToUsd.divide(rateConvertTo, 2, RoundingMode.HALF_UP);
         this.sumCurrencyConvert = sumCurrencyConvert;
     }
 

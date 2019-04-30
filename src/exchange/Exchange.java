@@ -40,13 +40,12 @@ public class Exchange {
         availableCurrencies();
         currencyFrom();
         currencyAmount();
+        System.out.println(currencyAmount.scale());
         currencyTo();
         waitingForUser();
         convert(currencyConvertFrom, currencyConvertTo, currencyAmount);
         approveConvert();
         approveRepeat();
-
-        System.out.println("Спасибо за посещение нашего банкомата");
     }
 
     private void availableCurrencies() {
@@ -68,19 +67,11 @@ public class Exchange {
     }
 
     private void currencyAmount() {
-        // Здесь создаем сканер
-        // так как без него обработка ошибки уходит в бесконечный цикл
-        // что вызывает ошибку и некорректную работу программы
-        Scanner scanner = new Scanner(System.in);
-        // вводим сумму, которую хотим обменять
-        System.out.println("Введите сумму:");
-        // проверяем вводимый формат
-        if (scanner.hasNextBigDecimal()) {
-            currencyAmount = scanner.nextBigDecimal();
-        } else {
-            System.out.println("Не верно введена сумма, пожалуйста, повторите ввод");
-            currencyAmount();
-        }
+        ExchangeValidation validationAmount = new ExchangeValidation();
+        validationAmount.validateAmount();
+        validationAmount.validateNull();
+        currencyAmount = validationAmount.getCurrencyAmount();
+
     }
 
     private void currencyTo() {
@@ -92,6 +83,11 @@ public class Exchange {
             currencyConvertTo = CurrencyFactory.getCurrency(scanner.next());
         }
         this.currencyConvertTo = currencyConvertTo.get();
+        // валидируем момент того что клиент мог ввести две одинаковые валюты
+        if (currencyConvertFrom.currencyName().equals(this.currencyConvertTo.currencyName())) {
+            System.out.println("Валюту нельзя обменять саму на себя!");
+            currencyTo();
+        }
     }
 
     private void waitingForUser() throws InterruptedException {
@@ -145,6 +141,8 @@ public class Exchange {
         validationRepeat.yesOrNO();
         if (validationRepeat.getConfirmRepeat().equals("y")) {
             process();
+        } if (validationRepeat.getConfirmRepeat().equals("n")) {
+            System.out.println("Спасибо за посещение нашего банкомата");
         }
     }
 }

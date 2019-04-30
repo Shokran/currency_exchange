@@ -1,5 +1,7 @@
 package convert;
 
+import org.jetbrains.annotations.Contract;
+
 import java.math.BigDecimal;
 
 /**
@@ -21,6 +23,7 @@ public enum ConvertRate {
         this.value = value;
     }
 
+    @Contract(pure = true)
     public BigDecimal getValue() {
         return value;
     }
