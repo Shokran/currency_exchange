@@ -5,6 +5,8 @@ import convert.ConvertRate;
 import currency.Currency;
 import currency.CurrencyFactory;
 import org.jetbrains.annotations.NotNull;
+import validate.ValidateAmount;
+import validate.ValidateYesOrNo;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -40,7 +42,7 @@ public class Exchange {
         availableCurrencies();
         currencyFrom();
         currencyAmount();
-        System.out.println(currencyAmount.scale());
+//        System.out.println(new ValidateAmount().getCurrencyAmount().scale());
         currencyTo();
         waitingForUser();
         convert(currencyConvertFrom, currencyConvertTo, currencyAmount);
@@ -67,9 +69,8 @@ public class Exchange {
     }
 
     private void currencyAmount() {
-        ExchangeValidation validationAmount = new ExchangeValidation();
+        ValidateAmount validationAmount = new ValidateAmount();
         validationAmount.validateAmount();
-        validationAmount.validateNull();
         currencyAmount = validationAmount.getCurrencyAmount();
 
     }
@@ -98,7 +99,7 @@ public class Exchange {
 
     private void convert(@NotNull Currency currencyFrom,
                          @NotNull Currency currencyTo,
-                         BigDecimal currencyAmount) throws InterruptedException {
+                         BigDecimal currencyAmount) {
 
         System.out.println("Вы действительно хотите купить "
                         + new Convert(currencyConvertFrom,
@@ -113,7 +114,7 @@ public class Exchange {
 
     private void approveConvert() {
 
-        ExchangeValidation validationConvert = new ExchangeValidation();
+        ValidateYesOrNo validationConvert = new ValidateYesOrNo();
         validationConvert.yesOrNO();
         if (validationConvert.getConfirmRepeat().equals("y")) {
             processedConvert(currencyConvertFrom, currencyConvertTo, currencyAmount);
@@ -137,7 +138,7 @@ public class Exchange {
     private void approveRepeat() throws InterruptedException {
 
         System.out.println("Хотите обменять еще?");
-        ExchangeValidation validationRepeat = new ExchangeValidation();
+        ValidateYesOrNo validationRepeat = new ValidateYesOrNo();
         validationRepeat.yesOrNO();
         if (validationRepeat.getConfirmRepeat().equals("y")) {
             process();
