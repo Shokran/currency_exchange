@@ -21,6 +21,7 @@ import java.util.Scanner;
 /*
  Данный класс освобождает исполняемый от хаоса
  Здесь разбиты по методам все основные шаги
+ Валидации вводимых значений унесены в собственные классы
  */
 
 public class Exchange {
@@ -42,7 +43,6 @@ public class Exchange {
         availableCurrencies();
         currencyFrom();
         currencyAmount();
-//        System.out.println(new ValidateAmount().getCurrencyAmount().scale());
         currencyTo();
         waitingForUser();
         convert(currencyConvertFrom, currencyConvertTo, currencyAmount);
