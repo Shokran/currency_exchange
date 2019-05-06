@@ -6,7 +6,11 @@ import java.math.BigDecimal;
 
 /**
  * @author kozlov_ya
- * @created 26.05.19
+ * @created 26.04.19
+ */
+
+/*
+ Класс-enum хранящий соотношения валют к доллару
  */
 
 public enum ConvertRate {
@@ -19,6 +23,7 @@ public enum ConvertRate {
 
     public final BigDecimal value;
 
+    @Contract(pure = true)
     ConvertRate(BigDecimal value) {
         this.value = value;
     }

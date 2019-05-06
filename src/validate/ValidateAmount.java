@@ -1,6 +1,5 @@
 package validate;
 
-import currency.Currency;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
@@ -8,24 +7,25 @@ import java.util.Scanner;
 
 /**
  * @author kozlov_ya
- * @created 30.05.19
+ * @created 30.04.19
  */
 
-// метод валидации вводимой суммы
+/*
+ Класс валидирующий вводимое значение суммы обмена
+ Основные методы ничего не возвращает, отвечают за ввод и валидацию
+ Для возврата интересующего значения создан специальный метод-getter
+ */
+
 public class ValidateAmount {
 
-    private BigDecimal currencyIsNum;
-    private BigDecimal currencyIsNotNull;
-//    private BigDecimal currencyIsPositive;
-    private BigDecimal currencyAmount;
+    private BigDecimal currencyIsNum, currencyNotNull, currencyAmount; // переменные валидируемых сумм
 
     // основной публичный метод, где собраны все приватные
     public void validateAmount() {
         System.out.println("Введите сумму:");
         validateAmountIsNum();
         validateAmountNotNull(currencyIsNum);
-//        validateAmountPositive(currencyIsNotNull);
-        validateLessDecimalValue(currencyIsNotNull);
+        validateLessDecimalValue(currencyNotNull);
     }
 
     // проверяем, что вводимое значение является суммой нужного формата
@@ -36,42 +36,36 @@ public class ValidateAmount {
         // проверяем вводимый формат
         if (scanner.hasNextBigDecimal()) {
             amountIsNum = scanner.nextBigDecimal();
+            // присваиваем провалидированное значение переменной
+            this.currencyIsNum = amountIsNum;
         } else {
             System.out.println("Не верно введена сумма, пожалуйста, повторите ввод.");
             validateAmount();
         }
-        this.currencyIsNum = amountIsNum;
-        System.out.println(amountIsNum);
     }
 
-    // проверяем, что вводимое значение не является нулевым
-    private void validateAmountNotNull (@NotNull BigDecimal amountNotNull) {
+    // проверяем, что вводимое значение не является нулевым или отрицательным
+    private void validateAmountNotNull(@NotNull BigDecimal amountNotNull) {
         if (amountNotNull.compareTo(BigDecimal.ZERO) <= 0) {
             System.out.println("Не верно введена сумма, пожалуйста, повторите ввод.");
             validateAmount();
+        } else {
+            // присваиваем провалидированное значение переменной
+            this.currencyNotNull = amountNotNull;
         }
-        this.currencyIsNotNull = amountNotNull;
-        System.out.println(amountNotNull);
     }
 
-//    private void validateAmountPositive(@NotNull BigDecimal amountPositive) {
-//        if (amountPositive.compareTo(BigDecimal.ZERO) < 0) {
-//            System.out.println("Не верно введена сумма, пожалуйста, повторите ввод.");
-//            validateAmount();
-//        }
-//        this.currencyIsPositive = amountPositive;
-//        System.out.println(amountPositive);
-//    }
-
+    // проверяем, что вводимое значение имеет не более двух знаков после десятичной запятой
     private void validateLessDecimalValue(@NotNull BigDecimal amountLessDecimalValue) {
         if (amountLessDecimalValue.scale() > 2) {
-            System.out.println(amountLessDecimalValue.scale());
             System.out.println("Не верно введена сумма, пожалуйста, повторите ввод.");
             validateAmount();
+        } else {
+            // присваиваем провалидированное значение переменной
+            this.currencyAmount = amountLessDecimalValue;
         }
-        this.currencyAmount = amountLessDecimalValue;
-        System.out.println(amountLessDecimalValue);
     }
+
     // метод возврата введённой суммы
     public BigDecimal getCurrencyAmount() {
         return currencyAmount;

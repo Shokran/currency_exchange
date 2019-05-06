@@ -1,15 +1,15 @@
 import exchange.Exchange;
 
-import java.util.Scanner;
-
 /**
  * @author kozlov_ya
- * @created 16.05.19
+ * @created 16.04.19
+ */
+
+/*
+ Основной класс отвечающий за запуск программы
  */
 
 public class Main {
-
-    private static Scanner scanner = new Scanner(System.in); // создаём сканнер
 
     public static void main(String[] args) throws InterruptedException {
 

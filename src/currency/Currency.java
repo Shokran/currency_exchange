@@ -2,7 +2,7 @@ package currency;
 
 /**
  * @author kozlov_ya
- * @created 23.05.19
+ * @created 23.04.19
  */
 
 /*
@@ -10,7 +10,7 @@ package currency;
  */
 
 public interface Currency {
-    public String currencyName();
-    public String currencyAbbreviation();
-    public String currencySign();
+    String currencyName();
+    String currencyAbbreviation();
+    String currencySign();
 }
